@@ -4,6 +4,7 @@ from app.services import emotes_helper
 
 
 async def init(bot):
+    return  # Заглушка
     @bot.on(events.NewMessage(pattern="(?i)!? ?hug"))
     @bot.on(events.NewMessage(pattern="!? ?[оО][бБ][нН][яЯ]([лЛ]|[тТ][ьЬ])"))
     async def handler(event):
