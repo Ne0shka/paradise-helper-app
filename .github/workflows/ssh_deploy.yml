@@ -15,10 +15,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install SSH key
-        run: install -m 600 -D /dev/null ~/.ssh/id_rsa && echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
       - name: Connect to server and execute deploy command
-        run: ssh -i ~/.ssh/id_rsa -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -C "${{ secrets.SSH_DEPLOY_COMMAND }}"
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "${{ secrets.SSH_DEPLOY_COMMAND }}"
 
       - name: Cleanup
         run: rm -rf ~/.ssh
