@@ -1,9 +1,9 @@
 name: Deploy to server
 
 on:
-  push:
-    branches: [ "master" ]
-    tags: [ 'v*.*.*' ]
+  workflow_run:
+    workflows: ["Build and Push Docker Image"]
+    types: [completed]
 
 jobs:
   deploy:
@@ -13,9 +13,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Wait for the other workflows
-        uses: willgarcia/workflow-wait-action@v0.1.0
 
       - name: Install SSH key
         run: install -m 600 -D /dev/null ~/.ssh/id_rsa && echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
