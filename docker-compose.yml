@@ -1,0 +1,14 @@
+services:
+  paradise-helper-app:
+    #image: ghcr.io/Ne0shka/paradise-helper-app:latest
+    build: .
+    container_name: paradise-helper-app
+    restart: always
+    env_file:
+      - .env
+    #environment:
+    #  API_ID: "0"
+    #  API_HASH: "123abc"
+    #  BOT_TOKEN: "0:123abc"
+    volumes:
+      - ./bot.session:/app/bot.session
