@@ -14,7 +14,6 @@ WORKDIR /app
 
 COPY --from=builder /root/.local /root/.local
 COPY src/ src/
-COPY bot.session .
 
 ENV PATH=/root/.local/bin:$PATH
 CMD ["python", "-m", "src"]
