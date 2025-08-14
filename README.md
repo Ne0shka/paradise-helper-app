@@ -6,11 +6,23 @@ Paradise Helper App
 
 ## Семейство ботов Paradise
 
-||||
-|-|-|-|
-| [❤️ Адель](https://t.me/adel_helper_bot) | [🧡 Лина](https://t.me/lina_helper_bot) | [💛 Элли](https://t.me/elly_helper_bot) |
-| [💚 Сима](https://t.me/sima_helper_bot) | [💙 Мия](https://t.me/miya_helper_bot) | [🤍 Ева](https://t.me/evva_helper_bot) |
-| [🖤 Грейс](https://t.me/grace_helper_bot) | [💜 Харли](https://t.me/harly_helper_bot) | [🤎 Пай](https://t.me/payi_helper_bot) |
+<table>
+<tr>
+    <td><a href="https://t.me/adel_helper_bot">❤️ Адель</a></td>
+    <td><a href="https://t.me/lina_helper_bot">🧡 Лина</a></td>
+    <td><a href="https://t.me/elly_helper_bot">💛 Элли</a></td>
+</tr>
+<tr>
+    <td><a href="https://t.me/sima_helper_bot">💚 Сима</a></td>
+    <td><a href="https://t.me/miya_helper_bot">💙 Мия</a></td>
+    <td><a href="https://t.me/evva_helper_bot">🤍 Ева</a></td>
+</tr>
+<tr>
+    <td><a href="https://t.me/grace_helper_bot">🖤 Грейс</a></td>
+    <td><a href="https://t.me/harly_helper_bot">💜 Харли</a></td>
+    <td><a href="https://t.me/payi_helper_bot">🤎 Пай</a></td>
+</tr>
+</table>
 
 ## Особенности
 - GIF анимации при выполнении RP действий
